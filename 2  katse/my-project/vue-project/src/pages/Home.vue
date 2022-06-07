@@ -73,75 +73,23 @@
         <p class="uppercase text-sm lg:text-2xl pb-6">
           mõned asjad, <br />millega olen tuttav:
         </p>
-
         <div
-          class="flex flex-wrap w-40 m-auto md:w-full lg:w-full justify-center"
+          class="
+            flex flex-row flex-wrap
+            w-40
+            m-auto
+            md:w-full
+            lg:w-full
+            justify-center
+          "
         >
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/yks.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/kaks.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/kolm.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/neli.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/viis.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/kuus.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-12 md:w-10 w-6 h-auto"
-            src="./../assets/svg/viisteist.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/kaheksa.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-12 md:w-8 w-6 h-auto"
-            src="./../assets/svg/seitse.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-12 md:w-10 w-6 h-auto"
-            src="./../assets/svg/kymme.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-12 md:w-10 w-6 h-auto"
-            src="./../assets/svg/yksteist.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-12 md:w-8 w-6 h-auto"
-            src="./../assets/svg/kaksteist.svg"
-            alt="logo"
-          />
-          <img
-            class="lg:w-16 md:w-12 w-8 h-auto"
-            src="./../assets/svg/neliteist.svg"
-            alt="logo"
-          />
+          <div v-for="(item, index) in icons" :key="index">
+            <img
+              class="lg:w-16 md:w-12 w-8 h-auto"
+              :src="item.icon"
+              alt="logo"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -167,7 +115,21 @@ export default defineComponent({
   props: {},
 
   setup() {
-    return {};
+    const icons = [
+      { icon: "../icons/yks.svg" },
+      { icon: "../icons/kaks.svg" },
+      { icon: "../icons/kolm.svg" },
+      { icon: "../icons/neli.svg" },
+      { icon: "../icons/viis.svg" },
+      { icon: "../icons/kuus.svg" },
+      { icon: "../icons/yks.png" },
+      { icon: "../icons/kaheksa.svg" },
+      { icon: "../icons/yheksa.svg" },       
+      { icon: "../icons/kolmteist.svg" },
+      { icon: "../icons/neliteist.svg" },
+      { icon: "../icons/viisteist.svg" },
+    ];
+    return { icons };
   },
 });
 </script>

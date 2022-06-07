@@ -28,12 +28,12 @@ const router = createRouter({
       component: () => import('./../pages/WorkPage.vue')
     },
     {
-      path: '/contactform',
-      name: 'ContactForm',
+      path: '/contactpage',
+      name: 'ContactPage',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('./../pages/ContactForm.vue')
+      component: () => import('./../pages/ContactPage.vue')
     },
   ]
 })

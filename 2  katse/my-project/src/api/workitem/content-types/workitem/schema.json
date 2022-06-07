@@ -4,7 +4,8 @@
   "info": {
     "singularName": "workitem",
     "pluralName": "workitems",
-    "displayName": "workitems"
+    "displayName": "workitem",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

@@ -23,25 +23,25 @@
       :modules="modules"
       class="mySwiper"
     >
-      <swiper-slide
-      v-for="item in storeitems" :key="item.id">
+      <swiper-slide v-for="item in storeitems" :key="item.id">
         <div>
           <div class="md:h-96 h-40">
-            <img :src="imageLink + item.attributes.img.data.attributes.url"/>
+            <img :src="imageLink + item.attributes.img.data.attributes.url" />
           </div>
 
           <div class="space-y-4 pt-2 h-20">
-            <p class="font-roboto uppercase font-bold text-base md:text-xl"> {{ item.attributes.tekst }}</p>
-            <p class="font-roboto uppercase text-xs md:text-lg"> {{ item.attributes.paragraph }}</p>
+            <p class="font-roboto uppercase font-bold text-base md:text-xl">
+              {{ item.attributes.tekst }}
+            </p>
+            <p class="font-roboto uppercase text-xs md:text-lg">
+              {{ item.attributes.paragraph }}
+            </p>
           </div>
         </div>
       </swiper-slide>
     </swiper>
-   
-    <div >
-     
-     
-    </div>
+
+    
   </div>
 </template>
 
@@ -75,18 +75,8 @@ export default defineComponent({
       });
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
-   
     return {
-      onSwiper,
       modules: [Pagination, Navigation],
-      onSlideChange,
-  
     };
   },
 });

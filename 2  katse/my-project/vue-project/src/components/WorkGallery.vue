@@ -1,7 +1,15 @@
 <template>
   <div class="lg:gap-y-24 flex flex-col gap-y-12">
     <div class="flex justify-center">
-      <h1 class="uppercase text-center text-2xl lg:text-3xl tracking-wider font-bold">
+      <h1
+        class="
+          uppercase
+          text-center text-2xl
+          lg:text-3xl
+          tracking-wider
+          font-bold
+        "
+      >
         graafiline disain
       </h1>
     </div>
@@ -15,15 +23,19 @@
       :modules="modules"
       class="mySwiper"
     >
-      <swiper-slide  v-for="item in workitems" :key="item.id">
+      <swiper-slide v-for="item in workitems" :key="item.id">
         <div>
-          <img :src="imageLink + item.attributes.img.data.attributes.url"/>
-          <div class="space-y-4 pt-2 ">
-            <p class="font-roboto uppercase font-bold text-base md:text-xl ">
+          <div class="md:h-96 h-40">
+            <img
+              :src="imageLink + item.attributes.img.data[0].attributes.url"
+            />
+          </div>
+          <div class="space-y-4 pt-2">
+            <p class="font-roboto uppercase font-bold text-base md:text-xl">
               {{ item.attributes.tekst }}
             </p>
-            <p class="font-roboto uppercase text-xs md:text-lg ">
-           {{ item.attributes.paragraph }}
+            <p class="font-roboto uppercase text-xs md:text-lg">
+              {{ item.attributes.paragraph }}
             </p>
           </div>
         </div>
@@ -50,7 +62,7 @@ export default defineComponent({
   },
   data() {
     return {
-      workitem: [],
+      workitems: [],
       imageLink: "http://localhost:1337",
     };
   },
@@ -58,15 +70,12 @@ export default defineComponent({
     fetch("http://localhost:1337/api/workitems?populate=*")
       .then((res) => res.json())
       .then((res) => {
-        this.workitem = res.data;
+        this.workitems = res.data;
       });
   },
   setup() {
-  
-    
     return {
       modules: [Pagination, Navigation],
-      
     };
   },
 });

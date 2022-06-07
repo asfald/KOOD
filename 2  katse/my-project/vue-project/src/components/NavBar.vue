@@ -72,7 +72,7 @@
           font-bold
         "
       >
-        <router-link to="/contactform"> kontakt</router-link>
+        <router-link to="/contactpage"> kontakt</router-link>
       </button>
     </div>
   </div>
