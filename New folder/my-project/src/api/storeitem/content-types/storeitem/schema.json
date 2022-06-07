@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "storeitems",
+  "info": {
+    "singularName": "storeitem",
+    "pluralName": "storeitems",
+    "displayName": "storeitem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "unique": false,
+      "required": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
