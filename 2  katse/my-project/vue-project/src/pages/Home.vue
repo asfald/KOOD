@@ -1,4 +1,5 @@
 <template>
+<Container size="extra-large">
   <div
     class="
       flex flex-col
@@ -6,7 +7,7 @@
       gap-y-12
       justify-center
       align-center
-      max-w-screen-xl
+
       m-auto
       font-roboto
     "
@@ -15,7 +16,7 @@
 
     <div class="flex justify-center">
       <iframe
-        class="aspect-video w-full m-auto lg:px-12"
+        class="aspect-video w-full m-auto "
         src="https://www.youtube.com/embed/wp43OdtAAkM?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&controls=1&autoplay=0"
         frameborder="0"
         allow="autoplay"
@@ -30,7 +31,7 @@
         space-x-0
         lg:space-x-16
         m-auto
-        lg:px-12
+       
       "
     >
       <div>
@@ -96,14 +97,16 @@
     <HomeGallery />
     <Footer />
   </div>
+  </Container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { RouterLink, RouterView } from "vue-router";
+
 import NavBar from "../components/NavBar.vue";
 import Footer from "../components/Footer.vue";
 import HomeGallery from "../components/HomeGallery.vue";
+import Container from './../components/Container.vue'
 
 export default defineComponent({
   name: "Home",
@@ -111,6 +114,7 @@ export default defineComponent({
     NavBar,
     Footer,
     HomeGallery,
+    Container
   },
   props: {},
 

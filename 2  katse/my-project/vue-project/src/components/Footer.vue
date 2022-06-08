@@ -1,5 +1,5 @@
 <template>
-<div class=" bg-black  max-w-screen-xl m-auto flex justify-center">
+<div class=" bg-black  w-full m-auto flex justify-center">
     <div class=" flex justify-center flex-col w-screen h-60">
         <div class="flex flex-row justify-center pt-8 space-x-6">
             <a href="https://www.instagram.com/asfald/">
