@@ -28,7 +28,7 @@
             alt="arrow"
         /></a>
         <img
-          src="./../assets/img/carousel/1.jpg"
+          src="./../assets/img/carousel/12.jpg"
           class="lg:max-w-2xl md:max-w-xl max-w-xs h-auto m-auto"
         />
 
@@ -46,7 +46,7 @@
             src="./../assets/svg/arrow_right.svg"
             alt="arrow"
         /></a>
-        <img src="./../assets/img/carousel/2.jpg" class="lg:max-w-2xl md:max-w-xl max-w-xs h-auto m-auto" />
+        <img src="./../assets/img/carousel/10.jpg" class="lg:max-w-2xl md:max-w-xl max-w-xs h-auto m-auto" />
         <a href="#slide4" class="flex"
           ><img
             class="w-24 h-auto"
@@ -61,7 +61,7 @@
             src="./../assets/svg/arrow_right.svg"
             alt="arrow"
         /></a>
-        <img src="./../assets/img/carousel/4.jpg" class="lg:max-w-2xl md:max-w-xl max-w-xs h-auto m-auto" />
+        <img src="./../assets/img/carousel/11.jpg" class="lg:max-w-2xl md:max-w-xl max-w-xs h-auto m-auto" />
 
         <a class="flex" href="#slide1">
           <img

@@ -14,8 +14,8 @@
       </h1>
     </div>
     <swiper
-      :slidesPerView="3"
-      :spaceBetween="30"
+      :slidesPerView="4"
+      :spaceBetween="8"
       :pagination="{
         type: 'progressbar',
       }"

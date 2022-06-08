@@ -17,7 +17,7 @@
     <div class="flex justify-center">
       <iframe
         class="aspect-video w-full m-auto "
-        src="https://www.youtube.com/embed/wp43OdtAAkM?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&controls=1&autoplay=0"
+        src="https://www.youtube.com/embed/dOKy0KF2VU0?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&controls=1&autoplay=1"
         frameborder="0"
         allow="autoplay"
         allowfullscreen
@@ -86,7 +86,7 @@
         >
           <div v-for="(item, index) in icons" :key="index">
             <img
-              class="lg:w-16 md:w-12 w-8 h-auto"
+              class="lg:w-20 md:w-12 w-8 h-auto"
               :src="item.icon"
               alt="logo"
             />

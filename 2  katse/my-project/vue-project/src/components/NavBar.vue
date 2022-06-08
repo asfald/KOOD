@@ -22,7 +22,7 @@
      
     </div>
 
-    <div class="flex flex-row space-x-2 justify-center md:space-x-12">
+    <div class="flex flex-row space-x-2 justify-center md:space-x-48">
       <button
         class="
           bg-transparent
@@ -38,7 +38,7 @@
           font-bold
         "
       >
-        <router-link to="/galleryview"> galerii</router-link>
+         <router-link to="/">kodu</router-link>
       </button>
       <button
         class="
@@ -55,7 +55,7 @@
           font-bold
         "
       >
-         <router-link to="/workpage"> tööd</router-link>
+        <router-link to="/galleryview"> galerii</router-link>
       </button>
       <button
         class="

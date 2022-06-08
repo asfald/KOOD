@@ -1,10 +1,10 @@
 <template>
 <Container size="extra-large">
-  <div class="m-auto flex flex-col justify-center gap-y-12">
+  <div class="m-auto flex flex-col justify-center gap-y-24">
     <NavBar />
     <PhotoGallery />
-    <WorkGallery />
-    <Footer />
+    <WorkGallery class="pb-24" />
+    <Footer  />
   </div>
 </Container>
 </template>

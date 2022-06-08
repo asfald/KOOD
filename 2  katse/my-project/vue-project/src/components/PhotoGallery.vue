@@ -54,10 +54,12 @@ import "swiper/css";
 import "./swiper.css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import FsLightbox from "fslightbox-vue";
 
 export default defineComponent({
   name: "PhotoGallery",
   components: {
+    FsLightbox,
     Swiper,
     SwiperSlide,
   },
